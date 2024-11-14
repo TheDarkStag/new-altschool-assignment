@@ -1,10 +1,11 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #c1b1d7; /* Light purple background */
     display: flex;
@@ -12,20 +13,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-#main {
-    width: 50%; /* Adjusted width for larger screens */
-    max-width: 1000px; /* Maximum width to prevent it from getting too wide */
+  }
+  
+  #main {
+    width: 400px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
     padding-bottom: 20px;
-}
-
-.New {
+  }
+  
+  .New {
     background-color: #ffeb87; /* Yellow background for the label */
     color: #333;
     font-weight: bold;
@@ -33,34 +33,53 @@ body {
     border-radius: 5px;
     position: absolute;
     top: 10px;
-    left: -10px;
+    left: 10px;
     font-size: 14px;
-}
-
-.image img {
+  }
+  
+  .image img {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-#text {
+  }
+  
+  #text {
     padding: 20px;
-    /* text-align: center; */
-}
-
-#text h1 {
-    font-size: 32px; /* Increased font size */
+    text-align: center;
+  }
+  
+  #text h1 {
+    font-size: 24px;
     margin-bottom: 10px;
-}
-
-#text h1 span {
+  }
+  
+  #text h1 span {
     font-weight: normal;
     color: #7a7a7a;
-    font-size: 24px; /* Increased font size */
-}
-
-#text p {
-    font-size: 18px; /* Increased font size */
+    font-size: 20px;
+  }
+  
+  #text p {
+    font-size: 16px;
     color: #555;
     line-height: 1.6;
+  }
+
+@media (max-width: 768px) {
+    #main {
+        width: 80%; /* Adjusted width for smaller screens */
+    }
+
+    #text h1 {
+        font-size: 20px; /* Decreased font size */
+    }
+
+    #text h1 span {
+        font-size: 18px; /* Decreased font size */
+    }
+
+    #text p {
+        font-size: 14px; /* Decreased font size */
+    }
+    
 }
